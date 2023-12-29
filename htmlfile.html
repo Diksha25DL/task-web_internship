@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive To-Do List</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #ff6b6b, #3a1c71);
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .container {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        border: 2px solid #4a69bd;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #4a69bd;
+    }
+    
+    .input-container {
+        text-align: center;
+    }
+    
+    input {
+        width: 70%;
+        padding: 10px;
+        margin-right: 5px;
+        border: 1px solid #4a69bd;
+        border-radius: 5px;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #4a69bd;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #324c82;
+    }
+    
+    ul {
+        margin-top: 10px;
+    }
+    
+    li {
+        background-color: #f0f0f0;
+        padding: 8px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    li span {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+    
+    li button {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    li button:hover {
+        background-color: #c0392b;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a new task"><br><br>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
